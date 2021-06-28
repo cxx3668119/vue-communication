@@ -17,6 +17,9 @@ export default {
   components: {
     GrandSon,
   },
+  mounted() {
+    console.log(this.$parent.count + " =====> parent");
+  },
   data() {
     return {
       cxx: "star",

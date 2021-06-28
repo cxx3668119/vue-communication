@@ -12,7 +12,8 @@ import Brother from "./Brother.vue";
 
 export default {
   mounted() {
-    console.log(this.$refs.son.cxx);
+    console.log(this.$children[0].cxx + " =====> $children");
+    console.log(this.$refs.son.cxx + " =====> refs");
   },
   provide() {
     return {
